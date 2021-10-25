@@ -60,7 +60,7 @@
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
+                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
@@ -138,8 +138,70 @@
                 </div>
             </div>
         </section>
+        <section>
+          <h2 class="text-uppercase">Whiskey of the Month</h2>
+          <table class="table table-hover table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Origin</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Bushmills</td>
+                  <td>Ireland</td>
+                  <td>£42.99</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Kraken</td>
+                  <td>England</td>
+                  <td>£24.99</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td >Penderyn</td>
+                  <td>Wales</td>
+                  <td>£31.99</td>
+                </tr>
+              </tbody>
+            </table>
+      </section>
         <!-- /.features -->
     </article>
+    <div class="modal" tabindex="-1" id="signUpModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sign Up To Whiskey Drop!</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="repeatPassword" class="form-label">Repeat Password</label>
+                        <input type="password" class="form-control" id="repeatPassword" placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
